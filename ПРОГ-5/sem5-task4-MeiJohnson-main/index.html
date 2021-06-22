@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style type="text/css">
+        #chatArea {
+            height: 100vh;
+            max-height: 100vh;
+            resize: vertical;
+        }
+        
+        textarea {
+            outline: none;
+            -moz-appearance: none;
+        }
+        
+        #sendButton {
+            float: right;
+        }
+        
+        #messageWindow {
+            position: relative;
+        }
+        
+        #messageform {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        body {
+            background-color: blueviolet;
+        }
+    </style>
+    <script>
+        const webSocket = new WebSocket('ws://localhost:8888/websocket');
+
+        webSocket.onopen = event => {
+            alert('onopen');
+            //webSocket.send("Hello Web Socket!");
+            const btn = document.querySelector('#sendButton');
+            const field = document.querySelector('#messageArea');
+            const nick = document.querySelector('#nick');
+            const form = document.querySelector('#messageform');
+
+            form.addEventListener('submit', (e) => {
+
+                const msgJSON = {
+                    nickname: nick.value,
+                    textmsg: field.value,
+                    time: parseInt(new Date().getTime() / 1000)
+                };
+                webSocket.send(JSON.stringify(msgJSON));
+                form.value = '';
+                e.preventDefault();
+            });
+
+        };
+
+        webSocket.onmessage = event => {
+            // alert('onmessage, ' + event.data);
+            //const msgJSON = JSON.parse(event.data);
+            console.log('check' + event.data);
+            const chatArea = document.querySelector('#chatArea');
+            //const msgFormat = `[${msgJSON['time']}]${msgJSON['nickname']}:${msgJSON['textmsg']}\n`
+            const userMsg = document.createTextNode(event.data);
+            chatArea.appendChild(userMsg);
+        };
+
+        webSocket.onclose = event => {
+            alert('onclose');
+        };
+    </script>
+</head>
+
+<body>
+    <!-- С помощью фреймворка Bootstrap 4 или другого добавить форму с двумя полями input type text, textarea или аналогичных. 
+            Отправить эти данные на сервер с помощью веб-сокетов
+            
+            и получить обратно
+        -->
+
+    <div class="row no-gutters">
+        <div class="col" id="messageWindow">
+            <form id="messageform">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="nick" placeholder="Имя пользователя" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Сообщение</span>
+                    </div>
+                    <textarea class="form-control" id="messageArea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="sendButton">Отправить</button>
+            </form>
+        </div>
+
+        <div class="col" style="height: 100%;">
+            <div class="input-group">
+                <textarea readonly class="form-control" id="chatArea" aria-label="With textarea">
+                    {% for m in messages %}
+                        {{ m['message']}}
+                    {% end %}
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
