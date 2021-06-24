@@ -38,7 +38,13 @@
 
 ## Семестр 6
 ### Лабораторные работы
-+ [№1. Титаник](https://github.com/MeiJohnson/prog_exam/blob/main/%D0%9F%D0%A0%D0%9E%D0%93-6/sem6-t1-lr1/main2.py)
++ [№1,2. Портфолио в Lector](https://meijohnson.github.io/mylektorportfolio/)
++ [№3,4. Титаник](https://github.com/MeiJohnson/prog_exam/blob/main/%D0%9F%D0%A0%D0%9E%D0%93-6/sem6-t1-lr1/main2.py)
++ [№5. Оценка модели линейной регрессии](https://colab.research.google.com/drive/1gQJlQc7mPjB5Z1qVSaLS-UC8Tls2MSd7?usp=sharing)
++ [№6. Пользователи на сайте](https://colab.research.google.com/drive/1R5chaUjWK_p23mF4qAyVQSGuTlwv9pCF?usp=sharing)
++ [№7. Предсказание цен на недвижимость](https://colab.research.google.com/drive/1LeMs4eWgm0c3rKhl6XSzZcuNRg0b5h3-?usp=sharing)
++ [№8. Предсказание дефолта по кредиту](https://colab.research.google.com/drive/1j7FCE2vTslg9tCbLzaJstGxWOXqMy-k5?usp=sharing)
++ [№9. Рекомендательные системы](https://colab.research.google.com/drive/1BciuIt_20HpskA1ZU_nqM1-ZQfpVgjlX?usp=sharing)
 + [Доклад "Генерация QR-кодов"](https://github.com/MeiJohnson/prog_exam/tree/main/%D0%9F%D0%A0%D0%9E%D0%93-6/doklad%20qrcode)
 
 
