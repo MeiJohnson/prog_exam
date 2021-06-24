@@ -38,8 +38,7 @@
 
 ## Семестр 6
 ### Лабораторные работы
-+ [№1. Написать функцию squareSequenceDigit()](https://github.com/MeiJohnson/prog_exam/tree/main/%D0%9F%D0%A0%D0%9E%D0%93-5/sem5-task1-MeiJohnson-master)
-+ [№2. Титаник](https://github.com/MeiJohnson/prog_exam/blob/main/%D0%9F%D0%A0%D0%9E%D0%93-6/sem6-t1-lr1/main2.py)
++ [№1. Титаник](https://github.com/MeiJohnson/prog_exam/blob/main/%D0%9F%D0%A0%D0%9E%D0%93-6/sem6-t1-lr1/main2.py)
 + [Доклад "Генерация QR-кодов"](https://github.com/MeiJohnson/prog_exam/tree/main/%D0%9F%D0%A0%D0%9E%D0%93-6/doklad%20qrcode)
 
 
