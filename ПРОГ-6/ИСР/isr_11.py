@@ -33,6 +33,5 @@ def main():
     print("Среднее арифметическое",mVal)
     sqrt_var = math.sqrt(var)
     print("Среднеквадратичное отклонение",sqrt_var)
-    pass
 
 main()
