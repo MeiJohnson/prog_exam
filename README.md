@@ -45,6 +45,7 @@
 + [№7. Предсказание цен на недвижимость](https://colab.research.google.com/drive/1LeMs4eWgm0c3rKhl6XSzZcuNRg0b5h3-?usp=sharing)
 + [№9. Рекомендательные системы](https://colab.research.google.com/drive/1BciuIt_20HpskA1ZU_nqM1-ZQfpVgjlX?usp=sharing)
 + [№9. Аннотированный список](https://github.com/MeiJohnson/prog_exam/blob/main/%D0%9F%D0%A0%D0%9E%D0%93-6/%D0%9B%D0%A0%209%20%D0%A6%D0%B0%D1%80%D1%83%D0%BB%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%90%D0%92.docx)
++ [№10. Асинхронность в Python](https://github.com/MeiJohnson/prog_exam/tree/main/%D0%9F%D0%A0%D0%9E%D0%93-6/%D0%9B%D0%A010)
 + [Доклад "Генерация QR-кодов"](https://github.com/MeiJohnson/prog_exam/tree/main/%D0%9F%D0%A0%D0%9E%D0%93-6/doklad%20qrcode)
 
 
