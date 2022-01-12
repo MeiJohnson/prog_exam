@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylsheet" href="src/style.css">
+    <title>Веб-портфолио Царулковой Анастасии</title>
+</head>
+
+<body style="font-family: Open Sans,Helvetica,Arial,sans-serif; font-size: 18px;
+line-height: 1.42857; text-align: center;">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-sm  navbar-dark" style="background-color:  transparent; border-color: transparent;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+
+                        <a href="{{ '/'|url }}" class="navbar-brand" style="font-family: 'Rubik',Times New Roman, sans-serif;">AnastasiaTs</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+                    </div>
+                    <div class="col-5">
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav me-auto mb-2">
+                                <li class="nav-item">
+                                    <a href="{{ '/'|url }}" class="nav-link">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ '/contacts'|url }}" class="nav-link">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ '/works'|url }}" class="nav-link">Работы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-bg" style="background: linear-gradient(45deg, #07077c, rgb(94, 28, 218)); color: #fff;">
+
+            <div style="padding: 17% 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 style="font-size: 59px; margin-top: 25px; font-family: 'Rubik',Times New Roman, sans-serif;
+                        font-weight: 900; box-sizing: border-box; text-align: center;
+                        line-height: 1.1; margin: .67em 0;">Веб-портфолио</h1>
+                            <p>Добро пожаловать на сайт Царулковой Анастасии, студентки РГПУ им. А. И. Герцена</p>
+                            <br>
+                            <a href="{{ '/works'|url }}" class="btn btn-outline-light btn-lg" title="" style="margin-bottom: 50px;">К работам</a>
+                            <a href="#down" class="" style="
+                            margin-top: 100px;
+                            z-index: 9999;
+                            display: flex;
+                            flex-direction: column;
+                            cursor: pointer;
+                            "><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mx-auto bi bi-chevron-down text-white" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 50px 0; box-sizing: border-box;">
+            <div class="container" id="down">
+                <div class="row">
+                    <div class="col-12" style="margin-left: 16.66667%; width: 66.66667%;">
+                        <div class="text-center">
+                            <h2 style="font-family: 'Rubik',Times New Roman, sans-serif;
+                      font-weight: 900;
+                      line-height: 1.1;
+                      margin-bottom: 25px;
+                      color: #312fb3;">Обо мне</h2>
+                            <img src="{{ '/img-5038.png'|url }}" class="rounded mx-auto d-block" style="margin-bottom: 25px;" alt="my_photo">
+                            <p>Здравствуйте! Рада видеть вас на своем небольшом сайте.
+                                <br> Я учусь в Санкт-Петербургском РГПУ им. А. И. Герцена в Институте информационных технологий и технологического образования на направлении ИВТ. Помимо учебы я занимаюсь рисованием, веб-дизайном и люблю иногда повзять
+                                крючком. Приятно было познакомиться!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+
+</html>

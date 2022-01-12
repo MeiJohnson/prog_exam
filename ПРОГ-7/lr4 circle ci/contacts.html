@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylsheet" href="src/style.css">
+    <title>Веб-портфолио Царулковой Анастасии</title>
+</head>
+
+<body style="font-family: Open Sans,Helvetica,Arial,sans-serif; font-size: 18px;
+line-height: 1.42857; text-align: center;">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-sm  navbar-dark" style="background-color:  transparent; border-color: transparent;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+
+                        <a href="{{ '/'|url }}" class="navbar-brand" style="font-family: 'Rubik',Times New Roman, sans-serif;">AnastasiaTs</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+                    </div>
+                    <div class="col-5">
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav me-auto mb-2">
+                                <li class="nav-item">
+                                    <a href="{{ '/'|url }}" class="nav-link">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ '/contacts'|url }}" class="nav-link">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ '/works'|url }}" class="nav-link">Работы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-bg" style="background: linear-gradient(45deg, #07077c, rgb(94, 28, 218)); color: #fff;">
+
+            <div style="padding: 22% 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 style="font-size: 59px; margin-top: 25px; font-family: 'Rubik',Times New Roman, sans-serif;
+                        font-weight: 900; box-sizing: border-box; text-align: center;
+                        line-height: 1.1; margin: .67em 0;">Контакты</h1>
+                        </div>
+                        <a href="#down" class="" style="
+                        z-index: 9999;
+                        cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-down text-white" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 50px 0; box-sizing: border-box;">
+            <div class="container" id="down">
+                <div class="row">
+                    <div class="col-12" style="margin-left: 16.66667%; width: 66.66667%;">
+                        <div class="text-center">
+                            <h2 style="font-family: 'Rubik',Times New Roman, sans-serif;
+                      font-weight: 900;
+                      line-height: 1.1;
+                      margin-bottom: 25px;
+                      color: #312fb3;">...</h2>
+                            <img src="{{ 'fox.jpg'|url }}" class="rounded mx-auto d-block" style="margin-bottom: 25px; width: 150px;" alt="fox">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                                  </svg> meikojeiko@gmail.com</li>
+                                <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                  </svg><a href="https://github.com/MeiJohnson" class="link-dark" target="_blank"> github.com/MeiJohnson</a></li>
+                                <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                  </svg> @vasyalis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+
+</html>
